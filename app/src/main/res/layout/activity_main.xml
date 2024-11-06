@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/soft_gradient_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donate Blood, Save Lives"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/bbbbbbbbbbbbb_removebg_preview"
+        android:contentDescription="Blood Donation Image"
+        android:scaleType="fitCenter"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In"
+        android:drawableLeft="@drawable/webp_net_resizeimage__5_"
+        android:textColor="@color/white"
+        android:background="@drawable/flat_rounded_button"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSignIn"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/webp_net_resizeimage__4_"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:background="@drawable/flat_rounded_button"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnHero"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:drawableLeft="@drawable/webp_net_resizeimage__6_"
+        android:layout_marginTop="15dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="Our Heroes"
+        android:textColor="@color/white"
+        android:background="@drawable/flat_rounded_button"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+    <!-- New Button for Viewing Emergencies -->
+    <Button
+        android:id="@+id/btnViewEmergencies"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnHero"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="View Emergencies"
+        android:drawableLeft="@drawable/webp_net_resizeimage__3_"
+        android:textColor="@color/white"
+        android:background="@drawable/flat_rounded_button"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_gradient_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="  Give the gift of life.   "
+        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text=" Register to donate blood today"
+        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <ImageView
+        android:layout_width="398dp"
+        android:layout_height="243dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/bd2" />
+
+    <EditText
+        android:id="@+id/etRegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="   Username"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/soft_gradient_background"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="Your blood, their lifeline"
+        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="395dp" />
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="   Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/etRegisterUsername"
+        android:background="@drawable/soft_gradient_background"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnRegisterSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="22dp"
+        android:layout_below="@id/etRegisterPassword"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/flat_rounded_button"/>
+
+</RelativeLayout>

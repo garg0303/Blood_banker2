@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_gradient_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:text=" SAVE ME"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="357dp"
+        android:layout_height="248dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/bd6" />
+
+    <EditText
+        android:id="@+id/etDonorName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="   Full Name"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/soft_gradient_background" />
+
+    <Spinner
+        android:id="@+id/spinnerBloodGroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/etDonorName"
+        android:background="@drawable/soft_gradient_background" />
+
+    <!-- Country Spinner -->
+    <Spinner
+        android:id="@+id/spinnerCountry"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/spinnerBloodGroup"
+        android:background="@drawable/soft_gradient_background" />
+
+    <!-- State Spinner -->
+    <Spinner
+        android:id="@+id/spinnerState"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/spinnerCountry"
+        android:background="@drawable/soft_gradient_background" />
+
+    <!-- City Spinner -->
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/spinnerState"
+        android:background="@drawable/soft_gradient_background" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Contact"
+        android:layout_marginTop="616dp"
+        android:background="@drawable/soft_gradient_background"
+        android:id="@+id/etContact"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/btnSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:layout_marginTop="76dp"
+        android:layout_below="@id/spinnerCity"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background" />
+</RelativeLayout>

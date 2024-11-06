@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_gradient_bg">
+
+    <Spinner
+        android:id="@+id/spinnerBloodGroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/soft_gradient_background"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerBloodGroup"
+        android:layout_margin="16dp"
+        android:background="@drawable/soft_gradient_background"
+        android:hint="Location"
+        android:padding="10dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etContactInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLocation"
+        android:layout_margin="16dp"
+        android:background="@drawable/soft_gradient_background"
+        android:hint="Contact Info"
+        android:padding="10dp"
+        tools:ignore="TouchTargetSizeCheck"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/btnSendEmergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Emergency Request"
+        android:layout_below="@id/etContactInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/flat_rounded_button"/>
+</RelativeLayout>
